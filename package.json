@@ -1,0 +1,18 @@
+{
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.4",
+    "vite": "^2.9.12"
+  },
+  "name": "y",
+  "version": "1.0.0",
+  "main": "postcss.config.js",
+  "scripts": {
+    "dev": "vite serve ./src/index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": ""
+}
