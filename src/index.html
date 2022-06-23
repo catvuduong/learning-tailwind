@@ -5,11 +5,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./../dist/output.css">
-    <title>Test</title>
+    <link rel="stylesheet" href="./app.css">
+    <title>Tailwind Learning</title>
 </head>
 
 <body>
-    <h1 class="text-center text-purple-900">Hello</h1>
+    <div class="pt-12 mb-4">
+        <h1 class="text-center text-2xl font-semibold mb-5 pt-">Live
+            anywhere</h1>
+        <h2 class="text-center text-gray-500 font-light mb-35">Keep calm & travel on</h2>
+    </div>
+    <div
+        class="grid grid-cols-1 lg:grid-cols-3 gap-x-[35px] gap-y-20 lg:gap-y-2 lg:max-w-6xl md:max-w-md max-w-sm mx-auto mb-[50px]">
+        <div class="h-96">
+            <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHRyYXZlbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                alt="" class="w-full h-full rounded-lg object-cover mb-3">
+            <h3 class="text-center font-medium text-lg mb-3">Enjoy the great cold</h3>
+            <span class="block text-center text-gray-400 text-sm">6,789 properties</span>
+        </div>
+        <div class="h-96 mb-5">
+            <img src=" https://images.unsplash.com/photo-1528543606781-2f6e6857f318?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHRyYXZlbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                alt="" class="w-full h-full rounded-lg object-cover mb-3">
+            <h3 class="text-center font-medium text-lg mb-3">Enjoy the great cold</h3>
+            <span class="block text-center text-gray-400 text-sm">6,789 properties</span>
+        </div>
+        <div class="h-96 mb-5">
+            <img src="https://images.unsplash.com/photo-1502791451862-7bd8c1df43a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fHRyYXZlbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                alt="" class="w-full h-full rounded-lg object-cover mb-3">
+            <h3 class="text-center font-medium text-lg mb-3">Enjoy the great cold</h3>
+            <span class="block text-center text-gray-400 text-sm">6,789 properties</span>
+        </div>
+    </div>
+    <div
+        class="mx-auto grid grid-cols-1 lg:grid-cols-3 gap-y-7 lg:max-w-[1200px] md:max-w-md max-w-sm gap-x-5 pt-[50px]">
+        <div class="px-5 py-8 rounded-lg border border-[#eee] text-center bg-white dark:bg-[#0F0D58]">
+            <img src="https://free3dicon.com/wp-content/uploads/2021/09/compass_perspective_matte_s-2-300x300.png.webp"
+                alt="" class="mb-5 max-w-[100px] mx-auto">
+            <h3 class=" text-lg font-semibold mb-6 text-[#0F0D58] dark:text-white ">Recommendation</h3>
+            <p class="text-sm leading-loose font-normal dark:text-white text-[#9191B4]"> Lorem ipsum dolor sit amet
+                consectetur
+                adipisicing elit. Facere, odio,
+                facilis vero quod natus molestiae autem provident nam corporis sint
+                accusamus excepturi at in, temporibus architecto ad voluptatibus
+                maxime. Tenetur!</p>
+        </div>
+        <div class="px-5 py-8 rounded-lg border border-[#eee] text-center bg-white dark:bg-[#0F0D58]">
+            <img src="https://free3dicon.com/wp-content/uploads/2021/09/compass_perspective_matte_s-2-300x300.png.webp"
+                alt="" class="mb-5 max-w-[100px] mx-auto">
+            <h3 class=" text-lg font-semibold mb-6 text-[#0F0D58] dark:text-white ">Recommendation</h3>
+            <p class="text-sm leading-loose font-normal dark:text-white text-[#9191B4]"> Lorem ipsum dolor sit amet
+                consectetur
+                adipisicing elit. Facere, odio,
+                facilis vero quod natus molestiae autem provident nam corporis sint
+                accusamus excepturi at in, temporibus architecto ad voluptatibus
+                maxime. Tenetur!</p>
+        </div>
+        <div class="px-5 py-8 rounded-lg border border-[#eee] text-center bg-white dark:bg-[#0F0D58]">
+            <img src="https://free3dicon.com/wp-content/uploads/2021/09/compass_perspective_matte_s-2-300x300.png.webp"
+                alt="" class="mb-5 max-w-[100px] mx-auto">
+            <h3 class=" text-lg font-semibold mb-6 text-[#0F0D58] dark:text-white ">Recommendation</h3>
+            <p class="text-sm leading-loose font-normal dark:text-white text-[#9191B4]"> Lorem ipsum dolor sit amet
+                consectetur
+                adipisicing elit. Facere, odio,
+                facilis vero quod natus molestiae autem provident nam corporis sint
+                accusamus excepturi at in, temporibus architecto ad voluptatibus
+                maxime. Tenetur!</p>
+        </div>
+    </div>
+    <label for="toggle" class="inline-block cursor-pointer toggle-switch">
+        <input type="checkbox" id="toggle" class="darkmode-input hidden">
+        <div class="w-[100px] h-[40px] border border-[#ccc] 
+            rounded-full fixed p-[5px] right-5 bottom-5 z-50 transition-colors">
+            <div class="w-7 h-7 rounded-full transition-transform bg-[#ccc] darkmode-spinner"></div>
+        </div>
+    </label>
+    <script>
+        const toggleSwitch = document.querySelector(
+            '.toggle-switch input[type="checkbox"]'
+        );
+        const currentTheme = localStorage.getItem("theme");
+        if (currentTheme) {
+            document.documentElement.setAttribute("class", currentTheme);
+            if (currentTheme === "dark") {
+                toggleSwitch.checked = true;
+            }
+        }
+        function switchTheme(e) {
+            if (e.target.checked) {
+                document.documentElement.setAttribute("class", "dark");
+                localStorage.setItem("theme", "dark");
+            } else {
+                document.documentElement.setAttribute("class", "light");
+                localStorage.setItem("theme", "light");
+            }
+        }
+        toggleSwitch.addEventListener("change", switchTheme);
+    </script>
 </body>
 
 </html>
